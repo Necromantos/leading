@@ -22,3 +22,6 @@ type s struct {
 рв мутекс
 
 две таблицы без констрейнтов 2log(n)
+
+https://code.avito.ru/r/24c0d892-15b0-44cf-b6dc-97f844ff51e9
+https://excalidraw.com/#room=90abaf37092df8be6fde,PaZkMlu3lkJEYqgOMLnx0A
