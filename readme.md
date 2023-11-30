@@ -22,20 +22,20 @@
 >         с uint32
 >     }
 
-Есть функция getWeather, которая через нейронную сеть вычисляет температуру за ~1 секунду
-Есть highload ручка /weather/highload с нагрузкой 3-5k RPS
-Необходимо реализовать код этой ручки
-
-func getWeather() int {
-    time.Sleep(1 * time.Second)
-    return rand.Intn(70) - 30
-}
-
-func main() {
-    http.HandleFunc("/weather/highload", func(resp http.ResponseWriter, req *http.Request) {
-
-    })
-}
+>     Есть функция getWeather, которая через нейронную сеть вычисляет температуру за ~1 секунду
+>     Есть highload ручка /weather/highload с нагрузкой 3-5k RPS
+>     Необходимо реализовать код этой ручки
+>
+>     func getWeather() int {
+>        time.Sleep(1 * time.Second)
+>        return rand.Intn(70) - 30
+>     }
+>
+>     func main() {
+>         http.HandleFunc("/weather/highload", func(resp http.ResponseWriter, req *http.Request) {
+>    
+>         })
+>     }
 
 
 
