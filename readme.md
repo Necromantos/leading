@@ -84,8 +84,8 @@
 - https://code.avito.ru/r/24c0d892-15b0-44cf-b6dc-97f844ff51e9
 
 ## DESIGN TASKS
+- https://excalidraw.com/#room=90abaf37092df8be6fde,PaZkMlu3lkJEYqgOMLnx0A
 
 ## SQL TASKS
-
 - две таблицы без констрейнтов 2log(n)
-- https://excalidraw.com/#room=90abaf37092df8be6fde,PaZkMlu3lkJEYqgOMLnx0A
+
