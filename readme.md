@@ -21,6 +21,9 @@
 >         с uint32
 >     }
 
+>     Что выведет программа и сколько времени будет работать?
+>     Как её можно ускорить?
+> 
 >     package main
 >
 >     import (
@@ -61,6 +64,8 @@
 
 - рв мутекс
 - https://code.avito.ru/r/24c0d892-15b0-44cf-b6dc-97f844ff51e9
+
+## DESIGN TASKS
 
 ## SQL TASKS
 
