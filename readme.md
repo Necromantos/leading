@@ -7,60 +7,60 @@
 > `1 белка за теже 1,5 минуты съест 1 жёлудь. 1 белка за 9 минут съест 6 желудей. 9 белок за 9 минут съедят 54 жёлудя.`
 
 ## GO TASKS
->     Сколько места занимает каждая из структур и почему?
-> 
->     type s struct {
->         a bool
->         b uint32
->         с bool
->     }
-> 
->     type s struct {
->         a bool
->         b bool
->         с uint32
->     }
+    Сколько места занимает каждая из структур и почему?
 
->     Что выведет программа и сколько времени будет работать?
->     Как её можно ускорить?
-> 
->     package main
->
->     import (
->         "fmt"
->	      "time"
->     )
->
->     const numRequests = 10000
->
->     var count int
->
->     func networkRequest() {
->         time.Sleep(time.Millisecond) // Эмуляция сетевого запроса
->         count++
->     }
->
->     func main() {
->         for i := 0; i < numRequests; i++ {
->             networkRequest()
->         }
->         fmt.Println(count)
->     }
+    type s struct {
+        a bool
+        b uint32
+        с bool
+    }
 
->     Есть функция getWeather, которая через нейронную сеть вычисляет температуру за ~1 секунду
->     Есть highload ручка /weather/highload с нагрузкой 3-5k RPS
->     Необходимо реализовать код этой ручки
+    type s struct {
+        a bool
+        b bool
+        с uint32
+    }
 >
->     func getWeather() int {
->         time.Sleep(1 * time.Second)
->         return rand.Intn(70) - 30
->     }
+    Что выведет программа и сколько времени будет работать?
+    Как её можно ускорить?
+
+    package main
+
+    import (
+        "fmt"
+        "time"
+    )
+
+    const numRequests = 10000
+
+    var count int
+
+    func networkRequest() {
+        time.Sleep(time.Millisecond) // Эмуляция сетевого запроса
+        count++
+    }
+
+    func main() {
+        for i := 0; i < numRequests; i++ {
+            networkRequest()
+        }
+        fmt.Println(count)
+    }
 >
->     func main() {
->         http.HandleFunc("/weather/highload", func(resp http.ResponseWriter, req *http.Request) {
->    
->         })
->     }
+    Есть функция getWeather, которая через нейронную сеть вычисляет температуру за ~1 секунду
+    Есть highload ручка /weather/highload с нагрузкой 3-5k RPS
+    Необходимо реализовать код этой ручки
+
+    func getWeather() int {
+        time.Sleep(1 * time.Second)
+        return rand.Intn(70) - 30
+    }
+
+    func main() {
+        http.HandleFunc("/weather/highload", func(resp http.ResponseWriter, req *http.Request) {
+
+        })
+    }
 
 - рв мутекс
 - https://code.avito.ru/r/24c0d892-15b0-44cf-b6dc-97f844ff51e9
