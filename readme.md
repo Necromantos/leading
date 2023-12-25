@@ -1,3 +1,11 @@
+## THEORY TASKS
+- arrays and slices
+- strings
+- maps
+- package sync
+- channels
+- scheduler
+
 ## LOGIC TASKS
 1) Имеется 9 монеток, 8 весят одинакого, а одна или больше или меньше, чем остальные. Необходимо за минимальное количество взвешиваний на весах с двумя чашами определить эту монетку.
     <details>
